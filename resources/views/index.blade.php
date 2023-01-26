@@ -26,6 +26,7 @@
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Age</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,6 +37,15 @@
                             <td>{{$student->name}}</td>
                             <td>{{$student->email}}</td>
                             <td>{{$student->age}}</td>
+                            <td>
+                                <div class="badge badge-secondary">
+                                   <a href=""> 📝 </a>
+                                </div>
+                                <div class="badge badge-secondary">
+                                   <a href=""> 🗑 </a>
+                                </div>
+                            </td>
+                        
                         </tr>
                         @endforeach
                         @endif
